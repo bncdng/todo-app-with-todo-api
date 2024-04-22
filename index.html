@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App with Todo API</title>
+</head>
+
+<body>
+    <div id="error"></div>
+    <header>
+        <h1>Todo or not Todo</h1>
+    </header>
+    <main>
+        <div class="menu">
+            <!-- Filter Buttons -->
+            <label class="filterElements" for="all">All</label>
+            <input class="input-filter" type="radio" name="todo" id="all" checked>
+
+            <label class="filterElements" for="open">Open</label>
+            <input class="input-filter" type="radio" name="todo" id="open">
+
+            <label class="filterElements" for="done">Done</label>
+            <input class="input-filter" type="radio" name="todo" id="done">
+
+        </div>
+        <!-- Remove Button -->
+        <form>
+            <button id="removeDoneTodos">Remove done Todos</button>
+        </form>
+        <br>
+
+        <!-- Text input -->
+        <form id="addTodoForm">
+            <label class="listElements">
+                <input type="text" placeholder="What's up?" id="newTodo">
+            </label>
+
+            <!-- Add Button -->
+            <button type="submit" id="addTodo">Add</button>
+        </form>
+
+        <!-- Todo List -->
+        <ul id="todoList">
+            <!-- <li class="strike">
+                <form>
+                    <label for="checkbox">
+                        <input type="checkbox" name="done" id="check" checked>
+                        <span>Learn CSS</span>
+                    </label>
+                </form>
+            </li> -->
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
